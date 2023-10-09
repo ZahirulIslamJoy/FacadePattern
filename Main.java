@@ -132,7 +132,6 @@ class BankingFacade {
 public class Main {
     public static void main(String[] args) {
         BankingFacade bankingFacade = new BankingFacade();
-
         System.out.println("Checking Account Operations:");
         System.out.println("Balance: $" + bankingFacade.checkCheckingBalance());
         bankingFacade.depositToChecking(2000);
@@ -141,7 +140,6 @@ public class Main {
         boolean withdrawn = bankingFacade.withdrawFromChecking(500);
         System.out.println("Withdrawn $500: " + (withdrawn ? "Success" : "Insufficient Funds"));
         System.out.println("Balance: $" + bankingFacade.checkCheckingBalance());
-
         System.out.println("\nSaving Account Operations:");
         System.out.println("Balance: $" + bankingFacade.checkSavingBalance());
         bankingFacade.depositToSaving(1000);
@@ -150,7 +148,6 @@ public class Main {
         withdrawn = bankingFacade.withdrawFromSaving(300);
         System.out.println("Withdrawn $300: " + (withdrawn ? "Success" : "Insufficient Funds"));
         System.out.println("Balance: $" + bankingFacade.checkSavingBalance());
-
         System.out.println("\nInvestment Account Operations:");
         System.out.println("Balance: $" + bankingFacade.checkInvestmentBalance());
         bankingFacade.investInInvestment("TechStocks", 3000);
